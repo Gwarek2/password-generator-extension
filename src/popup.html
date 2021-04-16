@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Key icon and copy-to-clipboard icon templates were taken from https://www.flaticon.com -->
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Password generator</h1>
+        </header>
+        <main>
+            <!-- Password parameters block -->
+            <a href="#" class="block parameters-header" id="parameters-header"><h2>Parameters</h2><img src="images/show-parameters-switch.png"></a>
+            <form class="block block-column" id="parameters">
+                <fieldset class="block block-column">   
+                    <div class="block block-column">
+                        <h3>Length of password:</h3>
+                        <small>4 to 50</small>
+                        <input type="number" id="length" class="inpt-fld" min="4" max="50" required>
+                    </div>
+    
+                    <div>
+                        <label for="letters">
+                            <input type="checkbox" id="letters"> Letters
+                        </label>
+                        <ul>
+                            <li><label for="lower-case">
+                                <input type="checkbox" id="lower" class="letter-option"> Lower-case
+                            </label></li>
+                            <li><label for="upper-case">
+                                <input type="checkbox" id="upper" class="letter-option"> Upper-case
+                            </label></li>
+                        </ul>
+                        <!-- <input type="text" id="custom-letters"> -->
+                    </div>
+    
+                    <div>
+                        <label for="digits">
+                            <input type="checkbox" id="digits"> Digits
+                            <!-- <input type="text" id="custom-digits"> -->
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="special-symbols">
+                            <input type="checkbox" id="special-symbols"> Symbols
+                         </label>
+                         <input type="text" class="inpt-fld" id="custom-special-symbols">
+                    </div>
+    
+                </fieldset>
+            </form>
+            
+            <!-- Button for starting password generation-->
+            <div class="block">
+                <button type="submit" class="btn btn-big" id="generate">Generate password</button>
+            </div>
+    
+            <!-- Field with generated password and copy-to-clipboard button -->
+            <div class="block" style="align-items: center;">
+                <div class="block inpt-btn" id="output">
+                    <input type="text" readonly id="generated-password" class="" placeholder="Password field">
+                    <button id="copy" class="btn btn-small" type="button" title="copy-to-clipboard">
+                        <img src="images/copy-to-clipboard.png" alt="copy-icon">
+                    </button>
+                </div>
+                <button class="btn btn-small switch" id="vision-switch">
+                    <img src="images/visible.png">
+                </button>
+            </div>
+            <div id="message" class="message">
+                <small></small>
+            </div>
+
+        </main>
+        <footer></footer>
+        <script src="helpers.js"></script>
+        <script src="events.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,133 @@
+html {
+    border: double whitesmoke 2px;
+}
+
+body {
+    padding: 10px 20px 0 20px;
+    background-color: #2a2a2e;
+    color: white;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px 0 5px -20px;
+}
+
+h1, h2, h3 {
+    line-height: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1173dd;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.block {
+    display: flex;
+    align-items: flex-start;
+    color: lightgray;
+    margin: 10px 0 10px 0;
+}
+
+.block-column {
+    flex-direction: column;
+}
+
+.btn {
+    border-radius: 2px;
+    border: none;
+    background-color: #0062cc;
+    color: white;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #1173dd;
+    cursor: pointer;
+}
+
+.btn-big {
+    min-height: 30px;
+    padding: 5px;
+}
+
+.btn-small {
+    min-height: 25px;
+}
+
+.btn > img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.inpt-btn {
+    border: solid white 2px;
+}
+
+.inpt-btn > input {
+    border-radius: 0;
+    border: none;
+    min-height: 30px;
+    width: 100%;
+}
+
+.inpt-btn > input:focus {
+    outline: none;
+}
+
+.inpt-btn > button {
+    border-radius: 0;
+    min-height: 32px;
+}
+
+.inpt-fld {
+    line-height: 30px;
+}
+
+.inpt-fld[type="text"] {
+    width: 62%;
+}
+
+.inpt-fld[type="number"] {
+    width: 100%;
+}
+
+.parameters-header {
+    align-items: center;
+}
+
+.parameters-header > img {
+    margin: 0 5px 0 5px;
+}
+
+.switch {
+    background-color: #2a2a2e;
+}
+
+.switch > img {
+    margin: 2px 0 0 5px;
+}
+
+.switch:hover {
+    background-color: #2a2a2e;
+}
+
+.message {
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+}
