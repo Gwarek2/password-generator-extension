@@ -1,0 +1,40 @@
+{
+  "name": "password_generator_browser",
+  "version": "1.0.0",
+  "description": "A simple and secure password generator",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "prod-server": "webpack serve --config webpack.config.js --mode production",
+    "dev-server": "webpack serve --config webpack.config.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gwarek2/password-generator-extension.git"
+  },
+  "keywords": [
+    "security",
+    "password"
+  ],
+  "author": "Gwarek2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gwarek2/password-generator-extension/issues"
+  },
+  "homepage": "https://github.com/Gwarek2/password-generator-extension#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "package.json": "^2.0.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

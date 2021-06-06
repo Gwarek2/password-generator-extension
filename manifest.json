@@ -2,16 +2,16 @@
     "manifest_version": 2,
     "name": "Secure password generator",
     "author": "Gwarek2",
-    "version": "0.5",
+    "version": "1.0.1",
     "description": "Simple password generator.\n",
     "applications": {
         "gecko": {
-            "id": "addon@password-generator.org"
+            "id": "{a31031e6-d97b-4093-9942-c8d51c546b2e}"
         }
     },
     "browser_action": {
         "default_title": "Password generator",
-        "default_popup": "src/popup.html",
+        "default_popup": "public/popup.html",
         "default_icon": {
             "16": "src/images/icons/icon16.png",
             "32": "src/images/icons/icon32.png",

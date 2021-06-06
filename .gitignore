@@ -1,7 +1,8 @@
-contributions.txt
-password-generator-firefox.xpi
-todo.txt
-manifest.json
 .idea/
 .vscode/
+
+node_modules/
+contributions.txt
+
+todo.txt
 pack-ext
