@@ -2,7 +2,7 @@
 .vscode/
 
 node_modules/
-contributions.txt
 
-todo.txt
+manifest-production.json
+
 pack-ext
